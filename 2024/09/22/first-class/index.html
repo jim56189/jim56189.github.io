@@ -5,15 +5,23 @@
   
 
   
-  <title>wen wei</title>
+  <title>first-class 一級函式 | wen wei</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wen wei">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="說明：一級函數(first-class function)，依MDN的解釋，函式在那個語言中可以被視為跟其他的變數一樣時，我們稱那樣的程式語言擁有一級函式。例如，函式可以作為參數傳遞到另一個函式，可以被另一個函式作為回傳值且可以被當作值一樣指派到另一個變數。 我們可以看到以下特點：  函式賦值1234const produce &#x3D; function()&#123;    console.log">
+<meta property="og:type" content="article">
+<meta property="og:title" content="first-class 一級函式">
+<meta property="og:url" content="http://yoursite.com/2024/09/22/first-class/index.html">
 <meta property="og:site_name" content="wen wei">
+<meta property="og:description" content="說明：一級函數(first-class function)，依MDN的解釋，函式在那個語言中可以被視為跟其他的變數一樣時，我們稱那樣的程式語言擁有一級函式。例如，函式可以作為參數傳遞到另一個函式，可以被另一個函式作為回傳值且可以被當作值一樣指派到另一個變數。 我們可以看到以下特點：  函式賦值1234const produce &#x3D; function()&#123;    console.log">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2024/09/22/first-class/first.jpg">
+<meta property="article:published_time" content="2024-09-22T08:52:30.000Z">
+<meta property="article:modified_time" content="2024-09-22T10:09:15.913Z">
 <meta property="article:author" content="wenwei">
+<meta property="article:tag" content="first-class">
+<meta property="article:tag" content="Js">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2024/09/22/first-class/first.jpg">
   
     <link rel="alternate" href="/atom.xml" title="wen wei" type="application/atom+xml">
   
@@ -62,9 +70,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-first-class" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-first-class" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2024/09/22/first-class/" class="article-date">
   <time datetime="2024-09-22T08:52:30.000Z" itemprop="datePublished">2024-09-22</time>
@@ -81,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/09/22/first-class/">first-class 一級函式</a>
+    <h1 class="article-title" itemprop="name">
+      first-class 一級函式
     </h1>
   
 
@@ -111,59 +117,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-facade" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2024/09/21/facade/" class="article-date">
-  <time datetime="2024-09-21T07:54:45.000Z" itemprop="datePublished">2024-09-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/it/">it</a>►<a class="article-category-link" href="/categories/it/design-pattern/">design pattern</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/09/21/facade/">facade 外觀模式</a>
-    </h1>
+    <a href="/2024/09/21/facade/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">facade 外觀模式</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <img src="/2024/09/21/facade/pizza.jpg" class="" title="pizza">
-
-<h2 id="說明："><a href="#說明：" class="headerlink" title="說明："></a>說明：</h2><p>物件導向常用的設計模式，你一定用過只是你不知道，底下用一個pizza販賣機當作範例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//製作餅皮</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dough</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">makeDough</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;製作餅皮...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//加料</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Toppings</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">addToppings</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;加上番茄與培根...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//烘焙</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Baking</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">baking</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;烤十分鐘...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//pizza販賣機</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PizzaVendingMachine</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">producePizza</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;開始製作pizza....&quot;</span>);</span><br><span class="line">        <span class="type">Dough</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dough</span>();</span><br><span class="line">        d.makeDough();</span><br><span class="line">        <span class="type">Toppings</span> <span class="variable">t</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Toppings</span>();</span><br><span class="line">        t.addToppings();</span><br><span class="line">        <span class="type">Baking</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Baking</span>();</span><br><span class="line">        b.baking();</span><br><span class="line">        System.out.println(<span class="string">&quot;出餐&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用者</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Client</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">PizzaVendingMachine</span> <span class="variable">machine</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PizzaVendingMachine</span>();</span><br><span class="line">        machine.producePizza();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>由上面例子可以知道，製作pizza的過程是很繁瑣的，使用者client不需要了解，只要透過操作pizza販賣機(接口)，<br>所有的製作邏輯都被pizza販賣機封裝使用者只需要透過簡單的操作就可以拿到pizza，這就是facade。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2024/09/21/facade/" data-id="cm1df3h370001jdvabdg6agb2" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/design-pattern/" rel="tag">design_pattern</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/facade/" rel="tag">facade</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
